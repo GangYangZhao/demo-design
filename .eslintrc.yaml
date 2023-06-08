@@ -23,23 +23,5 @@ parserOptions:
 rules:
   prettier/prettier: error
   no-useless-catch: off
-  promise/always-return: warn
-  promise/no-return-wrap: error
-  promise/param-names: error
-  promise/catch-or-return: warn
-  promise/no-native: off
-  promise/no-nesting: warn
-  promise/no-promise-in-callback: warn
-  promise/no-callback-in-promise: warn
-  promise/avoid-new: off
-  promise/no-new-statics: error
-  promise/no-return-in-finally: warn
-  promise/valid-params: warn
-  no-unused-vars: 'off'
-  unused-imports/no-unused-imports: error
-  unused-imports/no-unused-vars:
-    - error
-    - vars: all
-      varsIgnorePattern: '^_'
-      args: after-used
-      argsIgnorePattern: '^_'
+  no-unused-vars: error
+  '@typescript-eslint/no-var-requires': off
