@@ -2,8 +2,44 @@
 root: true
 extends:
   - eslint:recommended
+  - plugin:react/recommended
+  - plugin:@typescript-eslint/recommended
   - prettier
+  - plugin:prettier/recommended
 env:
   browser: true
   node: true
   es2022: true
+parser: '@typescript-eslint/parser'
+plugins:
+  - 'react'
+  - '@typescript-eslint'
+  - 'prettier'
+parserOptions:
+  ecmaVersion: latest
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+rules:
+  prettier/prettier: error
+  no-useless-catch: off
+  promise/always-return: warn
+  promise/no-return-wrap: error
+  promise/param-names: error
+  promise/catch-or-return: warn
+  promise/no-native: off
+  promise/no-nesting: warn
+  promise/no-promise-in-callback: warn
+  promise/no-callback-in-promise: warn
+  promise/avoid-new: off
+  promise/no-new-statics: error
+  promise/no-return-in-finally: warn
+  promise/valid-params: warn
+  no-unused-vars: 'off'
+  unused-imports/no-unused-imports: error
+  unused-imports/no-unused-vars:
+    - error
+    - vars: all
+      varsIgnorePattern: '^_'
+      args: after-used
+      argsIgnorePattern: '^_'

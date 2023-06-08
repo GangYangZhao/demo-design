@@ -1,0 +1,13 @@
+.idea/**
+.vscode/**
+**/node_modules/**
+**/lib/**
+
+*.DS_Store
+
+sitespeed-result
+
+**/dist/**
+
+
+.commitlintrc.js
