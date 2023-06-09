@@ -1,8 +1,7 @@
 import React, { useMemo } from 'react';
-import { ReactDOM } from 'react';
 import type { ReactNode } from 'react';
 
-interface ButtonProps {
+export interface ButtonProps {
   /** 将按钮宽度调整为其父宽度的选项 */
   block?: boolean;
   /** 设置危险按钮 */
@@ -54,7 +53,10 @@ const Button = (props: ButtonProps) => {
       </a>
     );
   }
-  return <button>{innerContent}</button>;
+
+  return (
+    <button>{innerContent}</button>
+  );
 };
 
 Button.display = 'Button';
